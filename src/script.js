@@ -18,8 +18,8 @@ const scene = new THREE.Scene();
 
 // Models
 const gltfLoader = new GLTFLoader();
-gltfLoader.load("/models/Duck/glTF/Duck.gltf", gltf => {
-  console.log(gltf);
+gltfLoader.load("/models/Duck/glTF-Embedded/Duck.gltf", gltf => {
+  scene.add(gltf.scene.children[0]);
 });
 
 /**
